@@ -84,4 +84,3 @@ test:
 production:
   <<: *default
   database: grammable_production
-
