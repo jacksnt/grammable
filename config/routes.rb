@@ -55,5 +55,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   root "grams#index"
-  resources :grams
+  resources :grams do
+    resources :comments, only: :create
+  end
 end
